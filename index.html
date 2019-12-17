@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/stylesheets/main.css">
+    <title>html5 form validation exercise</title>
+</head>
+
+<body>
+    <form action="html5 form validation exercise" method="POST" id="inscription" class="inscription">
+        <fieldset>
+            <legend>Exercise of html5</legend>
+            <div>
+                <label for="name">Name (required):</label>
+                <input type="text" id="firstname" value="" placeholder="Enter Name" aria-describedby="firstname-format"
+                    required aria-required="true" pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" title="firstname">
+                <span id="firstname-format" class="help1">Format: firstname</span>
+            </div>
+            <div>
+                <label for="name">Lastname (required):</label>
+                <input type="text" id="lastname" value="" aria-describedby="name-format" required aria-required="true"
+                    pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" title="lastname">
+                <span id="lastname-format" class="help2">Format: lastname</span>
+            </div>
+            <div>
+                <label for="age">Age (required):</label>
+                <input type="number" id="age" value="" pattern="[0-9a-z]\w" required>
+            </div>
+            <div>
+                <label for="address">addresse :</label>
+                <input type="text" id="addr" value="" aria-describedby="address-format"
+                    pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" title="lastname">
+                <span id="addr-format" class="addr">Format: <address></address></span>
+            </div>
+            <div>
+                <label>City:</label>
+                <input type="text" id="city" value="">
+            </div>
+            <div>
+                <label>Country:</label>
+                <input type="text" id="country" value="">
+            </div>
+            <div>
+                <label for="telephone">Tel (required):</label>
+                <input type="tel" id="telid" value="" maxlength="9" required aria-required="true" pattern="/[0-9]\d/"
+                    title="firstname">
+                <span id="tel-format" class="telclass"></span>
+            </div>
+            <div>
+                <label for="location">Location (required):</label>
+                <input type="location" id="location" value="" required>
+            </div>
+            <div>
+                    <label for="class">Class (required):</label>
+                    <input type="text" id="email" value="" required>
+                </div>
+        </fieldset>
+    </form>
+
+    <!-- ************* second form *************** -->
+
+    <form action="alert request" method="post">
+        <fieldset>
+            <legend>Exercise of html5</legend>
+            <div>
+                <label for="name">Name (required):</label>
+                <input type="text" id="nameform" value="" placeholder="Enter Name"
+                required aria-required="true" title="firstname">
+            </div>
+            <div>
+                <label for="password">Password (required):</label>
+                <input type="password" value="" id="password" placeholder="password there!">
+            </div>
+            <div class="submit">
+                <input type="submit" value="submit" id="submit">
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
